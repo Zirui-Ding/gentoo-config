@@ -29,8 +29,8 @@
     "on-click": "activate",
   },
   "tray": {
-    "icon-size": 18,
-    "spacing": 10
+    "icon-size": 16,
+    "spacing": 8
   },
   "clock": {
     "format": "{:%H:%M       %Y-%m-%d}",
