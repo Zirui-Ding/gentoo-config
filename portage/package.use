@@ -1,0 +1,90 @@
+sys-auth/seatd server builtin
+media-video/pipewire sound-server
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3
+x11-libs/libX11  abi_x86_32
+x11-libs/libXau  abi_x86_32
+x11-libs/libxcb  abi_x86_32
+x11-libs/libXdmcp  abi_x86_32
+virtual/opengl  abi_x86_32
+media-libs/mesa  abi_x86_32
+dev-libs/expat  abi_x86_32
+media-libs/libglvnd  abi_x86_32
+sys-libs/zlib  abi_x86_32
+x11-libs/libdrm  abi_x86_32
+x11-libs/libxshmfence  abi_x86_32
+x11-libs/libXext  abi_x86_32
+x11-libs/libXxf86vm  abi_x86_32
+x11-libs/libXfixes  abi_x86_32
+app-arch/zstd  abi_x86_32
+sys-devel/llvm  abi_x86_32
+x11-libs/libXrandr  abi_x86_32
+x11-libs/libXrender  abi_x86_32
+dev-libs/libffi  abi_x86_32
+sys-libs/ncurses  abi_x86_32
+dev-libs/libxml2  abi_x86_32
+dev-libs/icu  abi_x86_32
+sys-libs/gpm  abi_x86_32
+virtual/libelf  abi_x86_32
+dev-libs/elfutils  abi_x86_32
+app-arch/bzip2  abi_x86_32
+dev-libs/nspr  abi_x86_32
+dev-libs/nss  abi_x86_32
+net-libs/libndp  abi_x86_32
+x11-libs/extest abi_x86_32
+dev-libs/libevdev abi_x86_32
+dev-libs/wayland abi_x86_32
+virtual/rust abi_x86_32
+dev-lang/rust-bin abi_x86_32
+x11-libs/libpciaccess abi_x86_32
+sys-devel/clang abi_x86_32
+media-libs/fontconfig abi_x86_32
+sys-libs/libudev-compat abi_x86_32
+media-libs/libpulse abi_x86_32
+media-libs/libsndfile abi_x86_32
+net-libs/libasyncns abi_x86_32
+sys-apps/dbus abi_x86_32
+dev-libs/glib abi_x86_32
+dev-libs/libpcre2 abi_x86_32
+sys-apps/util-linux abi_x86_32
+media-libs/flac abi_x86_32
+media-libs/libogg abi_x86_32
+media-libs/libvorbis abi_x86_32
+media-libs/opus abi_x86_32
+media-sound/lame abi_x86_32
+media-sound/mpg123-base abi_x86_32
+media-libs/freetype abi_x86_32
+media-libs/libpng abi_x86_32
+virtual/libintl abi_x86_32
+virtual/libudev abi_x86_32
+sys-apps/systemd-utils abi_x86_32
+sys-libs/libcap abi_x86_32
+sys-libs/pam abi_x86_32
+virtual/libiconv abi_x86_32
+x11-libs/xcb-util-keysyms abi_x86_32
+>=x11-drivers/nvidia-drivers-565.57.01-r3 abi_x86_32
+>=gui-libs/egl-gbm-1.1.2 abi_x86_32
+>=gui-libs/egl-wayland-1.1.17_pre20241101 abi_x86_32
+>=gui-libs/egl-x11-1.0.0_pre20241113 abi_x86_32
+>=sys-apps/systemd-256.8 abi_x86_32
+>=dev-libs/libgcrypt-1.11.0-r1 abi_x86_32
+>=app-arch/lz4-1.10.0-r1 abi_x86_32
+>=dev-libs/libgpg-error-1.51 abi_x86_32
+>=dev-db/sqlite-3.47.0-r1 abi_x86_32
+>=sys-libs/readline-8.2_p13-r1 abi_x86_32
+gui-apps/waybar network pipewire tray wifi
+gnome-extra/nm-applet appindicator
+net-wireless/bluez btbclient experimental midi systemd 
+# required by dev-python/matplotlib-3.9.3::gentoo[-test]
+# required by dev-python/seaborn-0.13.2::gentoo
+# required by seaborn (argument)
+>=dev-python/pillow-11.0.0-r1 webp
+# required by dev-python/wxpython-4.2.1-r2::gentoo
+# required by dev-python/matplotlib-3.9.3::gentoo[-test,python_targets_python3_12,-python_targets_python3_11,-python_targets_python3_10,wxwidgets]
+# required by dev-python/seaborn-0.13.2::gentoo
+# required by seaborn (argument)
+>=x11-libs/wxGTK-3.2.5 gstreamer
+# required by sci-libs/caffe2-2.5.1-r3::gentoo[cuda]
+# required by sci-libs/pytorch-2.5.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-util/nvidia-cuda-toolkit-12.4.1 profiler

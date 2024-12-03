@@ -1,0 +1,71 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": "2",
+  "mod": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "clock",
+  ],
+  "modules-right": [
+    "temperature",
+    "cpu",
+    "memory",
+    "tray"
+  ],
+  "include": [],
+  "hyprland/window": {
+    "format": " {}"
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{:%H:%M       %Y-%m-%d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+  },
+  "temperature": {
+    "thermal-zone": 1,
+    "format": "   {temperatureC}°C  ",
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C "
+  },
+  "memory": {
+    "interval": 30,
+    "format": "    {}%  ",
+    "max-length": 10
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format": "{essid} - {ifname} via {gwaddr}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+  },
+  "bluetooth": {
+    "format": "{status}",
+    "format-disabled": "off",
+    "format-connected": "{num_connections}",
+    "tooltip-format": "{device_alias}",
+    "tooltip-format-connected": " {device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "~/.config/waybar/scripts/bluetooth"
+  },
+  "cpu": {
+    "format": "    {usage}%  "
+  }
+}
