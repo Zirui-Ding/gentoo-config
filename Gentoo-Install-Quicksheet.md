@@ -34,7 +34,8 @@
   mount --make-rslave /mnt/gentoo/dev
   mount --bind /run /mnt/gentoo/run
   mount --make-slave /mnt/gentoo/run
-  
+  ```
+  ```
   chroot /mnt/gentoo /bin/bash
   source /etc/profile
   export PS1="(chroot) ${PS1}"
@@ -44,10 +45,16 @@
   ```
   emerge-webrsync
   emerge dev-vcs/git app-eselect/eselect-repository
+ ```
+ ```
   rm -rf /var/db/repos/gentoo
   eselect repository list
   eselect repository enable gentoo guru science steam-overlay
   emerge --sync
+  ```
+  If using my package.use to install steam, ncurses need to be installed with -gpm USE to avoid circular dependencies.
+  ```
+  USE="-gpm" emerge ncurses -1
   emerge -avuDN @world
   ```
 8. Config system
@@ -63,7 +70,7 @@ Copy the output to [chatgpt](https://chatgpt.com) and let it generate an `/etc/f
   systemd-firstboot --prompt
   systemctl preset-all --preset-mode=enable-only
   ```
-9. Install networkmanager and kernel sources
+9. Install networkmanager, some useful tools, and kernel sources
   ```
   emerge gentoo-sources efibootmgr nwtworkmanager vim neovim dev-vsc/git
   ```
@@ -85,4 +92,7 @@ Copy the output to [chatgpt](https://chatgpt.com) and let it generate an `/etc/f
    ```
    reboot
    ```
-13. To be continue...
+13. Install some useful tools
+    ```
+    emerge sudo zsh bash-completion zsh-completions gentoo-zsh-completions
+    ```
