@@ -56,6 +56,8 @@
     ```
     USE="-gpm" emerge ncurses -1
     emerge -avuDN @world
+    emerge @preserved-rebuild
+    emerge --depclean
     ```
 8. Config system
     ```
@@ -95,4 +97,5 @@
 13. Install some useful tools
     ```
     emerge sudo zsh bash-completion zsh-completions gentoo-zsh-completions
+    emerge gui-wm/hyprland hyprpaper kitty wofi dunst xdg-desktop-portal-hyprland
     ```
