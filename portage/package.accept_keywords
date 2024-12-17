@@ -1,36 +1,3 @@
 =sys-kernel/gentoo-sources-6.12.4-r1 ~amd64
-
-gui-wm/hyprland ~amd64
-gui-apps/hyprpaper ~amd64
-gui-libs/aquamarine ~amd64
-dev-libs/hyprland-protocols ~amd64
-gui-libs/hyprutils ~amd64
-gui-apps/hyprlock ~amd64
-
-dev-python/xgboost ~amd64
-sci-libs/pytorch ~amd64
-dev-util/nvidia-cuda-toolkit ~amd64
-sci-libs/caffe2 ~amd64
-dev-libs/cpuinfo ~amd64
-dev-libs/pthreadpool ~amd64
-sci-libs/onnx ~amd64
-sci-libs/foxi ~amd64
-dev-libs/cudnn ~amd64
-dev-libs/cudnn-frontend ~amd64
-dev-libs/cutlass ~amd64
-dev-libs/psimd ~amd64
-dev-libs/FP16 ~amd64
-dev-libs/FXdiv ~amd64
-dev-libs/pocketfft ~amd64
-sci-libs/kineto ~amd64
-dev-libs/dynolog ~amd64
-dev-libs/pfs ~amd64
-dev-python/peachpy ~amd64
-dev-python/opcodes ~amd64
-dev-libs/clog ~amd64
-
-gui-apps/rofi-wayland ~amd64
 app-i18n/mozc ~amd64
-app-i18n/fcitx-rime
-
-app-misc/nwg-look ~amd64
+app-i18n/fcitx-rime ~amd64
